@@ -1,0 +1,463 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+/* Mid Section */
+.mid-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and HTML setup for a sticky footer */
+html, body {
+    height: 100%; /* Ensure the body takes up the full height of the viewport */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+}
+
+/* Main content area */
+main {
+    flex: 1; /* Pushes the footer to the bottom if content is short */
+    padding: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f0ad4e;
+}
+
+footer .footer-left,
+footer .footer-center,
+footer .footer-right {
+    flex: 1;
+    padding: 10px;
+}
+
+footer .footer-left h4,
+footer .footer-center h4 {
+    margin-bottom: 15px;
+}
+
+footer .social-icons a {
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #f0ad4e;
+}
+
+
+
+
+
+
+/* Products Section Styling */
+.products {
+    display: grid; /* Use CSS grid for layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+    background-color: #f9f9f9; /* Optional background */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.product-item {
+    text-align: center; /* Center-align the text and image */
+    max-width: 250px; /* Restrict the width of each item */
+}
+
+.product-item img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
+    margin-bottom: 10px; /* Add space below the image */
+}
+
+.product-item p {
+    font-size: 14px; /* Set font size for the description */
+    color: #555; /* Light gray text color */
+    margin: 5px 0;
+}
+
+.product-item p strong {
+    font-size: 16px; /* Slightly larger font for the product name */
+    color: #333; /* Darker color for emphasis */
+}
+
+/* About Us Container Styling */
+.about-container {
+    max-width: 800px; /* Set a maximum width for the content */
+    margin: 50px auto; /* Center the container horizontally and add vertical spacing */
+    background-color: #333; /* Dark gray background */
+    color: #fff; /* White text for contrast */
+    padding: 20px; /* Add padding inside the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better aesthetics */
+    text-align: center; /* Center-align the text */
+}
+
+.about-container h1 {
+    font-size: 28px;
+    margin-bottom: 20px; /* Add space below the heading */
+    color: #ffc107; /* Highlight the heading with a yellow color */
+}
+
+.about-container p {
+    font-size: 16px; /* Set font size for the paragraphs */
+    line-height: 1.6; /* Improve readability with proper line height */
+    margin-bottom: 15px; /* Space between paragraphs */
+}
+
+/* Services Container Styling */
+.services-container {
+    max-width: 800px; /* Set a maximum width for the content */
+    margin: 50px auto; /* Center the container horizontally and add vertical spacing */
+    background-color: #333; /* Dark gray background */
+    color: #fff; /* White text for contrast */
+    padding: 20px; /* Add padding inside the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better aesthetics */
+    text-align: center; /* Center-align the text */
+}
+
+.services-container h1 {
+    font-size: 28px;
+    margin-bottom: 20px; /* Add space below the heading */
+    color: #ffc107; /* Highlight the heading with a yellow color */
+}
+
+.services-container p {
+    font-size: 16px; /* Set font size for the paragraphs */
+    line-height: 1.6; /* Improve readability with proper line height */
+    margin-bottom: 15px; /* Space between paragraphs */
+}
+
+
+
+/* Mid Section Styling */
+.mid-section {
+    padding: 40px 20px; /* Add padding around the section */
+    background-color: #948d8d; /* Optional light background */
+}
+
+.mid-section h1 {
+    font-size: 28px; /* Font size for the title */
+    color: #333; /* Dark text color for contrast */
+    margin-bottom: 20px; /* Add space below the title */
+    font-weight: bold; /* Make the title stand out */
+    text-transform: uppercase; /* Optional: Make title uppercase */
+    text-align: left; /* Align the title to the left */
+}
+
+.image-description {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Evenly space the images */
+    align-items: center; /* Center the images vertically */
+    gap: 20px; /* Add space between the items */
+}
+
+.highlight-item {
+    flex: 1; /* Allow each item to take equal space */
+    max-width: 33%; /* Ensure the items don’t exceed 1/3 of the width */
+    text-align: center; /* Center-align the text and image */
+    
+}
+
+.highlight-item img {
+    width: 90%; /* Allow images to adjust based on container size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    margin-bottom: 10px; /* Add space below the image */
+    background-color: #fff;
+}
+
+.highlight-item p {
+    font-size: 16px; /* Set font size for the description */
+    color: #ffffff; /* Light gray text color */
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 products per row */
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.product p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.product .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.product .buttons a,
+.product .buttons input {
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 0.9em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.product .buttons a {
+    background-color: #000;
+    color: #fff;
+}
+
+.product .buttons a:hover {
+    background-color: #333;
+}
+
+.product .buttons input {
+    background-color: #eee;
+    color: #000;
+}
+
+.product .buttons input:hover {
+    background-color: #ddd;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.pagination a {
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background-color: #0056b3;
+}
+
+
+.product-details {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-details img {
+    max-width: 300px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.compare-table th,
+.compare-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.compare-table th {
+    background-color: #f4f4f4;
+}
+
+.compare-button {
+    margin: 20px;
+    text-align: center;
+}
+
+.compare-button button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.compare-button button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Container for products */
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 products per row */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Styling for individual product cards */
+.product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Image inside each product card */
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Product title */
+.product h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Product reference */
+.product p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Action buttons */
+.product .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.product .buttons a,
+.product .buttons input {
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 0.9em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.product .buttons a {
+    background-color: #000;
+    color: #fff;
+}
+
+.product .buttons a:hover {
+    background-color: #333;
+}
+
+.product .buttons input {
+    background-color: #eee;
+    color: #000;
+}
+
+.product .buttons input:hover {
+    background-color: #ddd;
+}
